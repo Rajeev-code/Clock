@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  flex-direction: column;
+}
+
+/* Wall Clock */
+.wall-clock {
+  width: 200px;
+  height: 200px;
+  border: 8px solid white;
+  border-radius: 50%;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+
+/* Clock Hands */
+.wall-clock div {
+  position: absolute;
+  width: 6px;
+  background: white;
+  border-radius: 5px;
+  transform-origin: bottom;
+}
+
+.hour-hand {
+  height: 40px;
+  top: 60px;
+}
+
+.minute-hand {
+  height: 60px;
+  top: 40px;
+}
+
+.second-hand {
+  height: 80px;
+  top: 20px;
+  background: red;
+}
+
+/* Digital Clock */
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.clock {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+#ampm {
+  font-size: 20px;
+  margin-left: 5px;
+  color: #ffea00;
+}
